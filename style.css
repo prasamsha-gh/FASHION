@@ -1,0 +1,124 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    font-size: large;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+nav {
+    background-color: var(--nav-bg);
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--nav-link);
+    font-weight: bold;
+}
+
+#hero {
+    padding: 50px;
+    text-align: center;
+    background-color: var(--hero-bg);
+}
+
+.category {
+    padding: 30px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.item {
+    text-align: center;
+}
+
+.item img {
+    max-width: 100px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Light Theme */
+:root {
+    --background-color: #f0f0f0;
+    --text-color: black;
+    --header-bg: white;
+    --header-text: black;
+    --nav-bg: orange;
+    --nav-link: #fff;
+    --hero-bg: #e0f7fa;
+    --button-bg:  orange;
+    --button-text: #fff;
+    --button-hover: orange ;
+    --footer-bg:darkgray;
+    --footer-text: #fff;
+}
+
+/* Dark Theme */
+body.dark-mode {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --header-bg: black;
+    --header-text: #fff;
+    --nav-bg: orange;
+    --nav-link: #fff;
+    --hero-bg: #212121;
+    --button-bg: orange;
+    --button-text: #121212;
+    --button-hover: orange;
+    --footer-bg: darkgray;
+    --footer-text: #fff;
+}
